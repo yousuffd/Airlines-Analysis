@@ -1,7 +1,4 @@
 # Airlines-Analysis
-Python-based analysis of key Indian airline performance metrics — including passenger trends, flight delays, and route performance — with data visualization and statistical insights
-
-# ✈️ Indian Airlines Metrics Analysis
 
 ## 📊 Project Overview
 This project provides a comprehensive **data analysis of Indian airlines**, focusing on performance metrics such as delays, passenger trends, and route efficiency.  
@@ -27,15 +24,3 @@ The analysis in `IndianAirlines.py` uses the following Python libraries:
 - **plotly** → Interactive visualizations  
 - **scikit-learn** → Predictive modeling and trend analysis  
 
----
-
-## 📂 Project Structure
-
-├── IndianAirlines.py # Main Python script for analysis
-├── data/ # Optional folder for datasets
-├── images/ # Optional folder for visualization outputs
-├── README.md # Project documentation
-└── requirements.txt # Dependencies file
-
-
----
