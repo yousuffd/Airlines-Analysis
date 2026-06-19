@@ -1,0 +1,265 @@
+/* ── Airline Executive Dashboard — Executive Light Theme ── */
+
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background-color: #F5F7FA !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+}
+
+[data-testid="stDecoration"] { display: none !important; }
+[data-testid="stHeader"]     { display: none !important; }
+[data-testid="stToolbar"]    { display: none !important; }
+
+.block-container {
+    padding-top: 0.75rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    max-width: 100% !important;
+}
+
+.element-container { margin-bottom: 0 !important; }
+
+[data-testid="stMarkdownContainer"] {
+    margin-bottom: 0 !important;
+}
+
+[data-testid="stMarkdownContainer"] p {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #6B7280;
+}
+
+[data-testid="stHorizontalBlock"] {
+    gap: 10px !important;
+    align-items: stretch !important;
+}
+
+div[data-testid="stVerticalBlock"] > div {
+    gap: 0.4rem !important;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E5E7EB !important;
+}
+
+
+[data-testid="stSidebar"] > div:first-child {
+    padding: 1rem 0.6rem !important;
+}
+
+[data-testid="stSidebar"] span {
+    color: #374151 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stSidebarNavItems"] a {
+    padding: 3px 8px !important;
+    min-height: 34px !important;
+    border-radius: 6px !important;
+    white-space: normal !important;
+}
+
+[data-testid="stSidebarNavItems"] a[aria-selected="true"] {
+    background-color: #EFF6FF !important;
+}
+
+[data-testid="stSidebarNavItems"] a[aria-selected="true"] span {
+    color: #2563EB !important;
+    font-weight: 700 !important;
+}
+
+/* ── Page header ── */
+.page-header-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #2563EB;
+}
+
+.page-header-icon { font-size: 28px; line-height: 1; transform: rotate(-15deg);}
+
+.executive-title {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    color: #0F172A !important;
+    letter-spacing: -0.3px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.executive-subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 3px;
+}
+
+/* ── Section cards ── */
+.section-card {
+    background: #FFFFFF;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
+}
+
+/* ── Chart wrappers ── */
+[data-testid="stPlotlyChart"],
+[data-testid="stPlotlyChart"] > div,
+[data-testid="stPlotlyChart"] iframe {
+    background: transparent !important;
+    border-radius: 8px;
+    border: none !important;
+}
+
+/* ── Alerts ── */
+.alert-success {
+    background: #F0FDF4;
+    border-left: 4px solid #059669;
+    padding: 10px 14px; border-radius: 6px;
+    margin-bottom: 8px; color: #065F46; font-size: 13px;
+}
+.alert-warning {
+    background: #FFFBEB;
+    border-left: 4px solid #D97706;
+    padding: 10px 14px; border-radius: 6px;
+    margin-bottom: 8px; color: #92400E; font-size: 13px;
+}
+.alert-danger {
+    background: #FEF2F2;
+    border-left: 4px solid #DC2626;
+    padding: 10px 14px; border-radius: 6px;
+    margin-bottom: 8px; color: #991B1B; font-size: 13px;
+}
+
+/* ── Streamlit overrides ── */
+h1, h2, h3, h4, h5, h6 { color: #111827 !important; }
+p, li, label            { color: #6B7280; }
+
+.stDataFrame {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+[data-testid="stMetric"] {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    padding: 12px;
+}
+
+.stAlert {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    color: #6B7280;
+}
+
+[data-testid="stNotification"] {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 8px !important;
+    color: #374151 !important;
+    padding: 12px 16px !important;
+}
+
+[data-testid="stInfo"] {
+    background: #EFF6FF !important;
+    border: 1px solid #BFDBFE !important;
+    border-radius: 8px !important;
+    color: #1E40AF !important;
+}
+
+hr { border-color: #E5E7EB; margin: 10px 0; }
+h3 { margin-top: 0.4rem !important; margin-bottom: 0.3rem !important; }
+
+/* Dataframe table styling */
+[data-testid="stDataFrame"] th {
+    background: #F9FAFB !important;
+    color: #374151 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stDataFrame"] td {
+    color: #111827 !important;
+    font-size: 12px !important;
+}
+
+section[data-testid="stSidebar"] ul {
+    gap: 0.05rem !important;
+}
+
+section[data-testid="stSidebar"] li {
+    margin-bottom: 0px !important;
+}
+
+section[data-testid="stSidebar"] a {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+}
+
+
+section[data-testid="stSidebar"] label {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1F2937 !important;
+}
+
+span[data-baseweb="tag"] {
+    background-color: #DBEAFE !important;
+    color: #1D4ED8 !important;
+    border: 1px solid #93C5FD !important;
+}
+
+[data-baseweb="calendar"] {
+    color: #111827 !important;
+}
+
+[data-baseweb="calendar"] * {
+    color: #111827 !important;
+}
+div[role="dialog"] {
+    color: #111827 !important;
+}
+
+div[role="dialog"] button {
+    color: #111827 !important;
+}
+section[data-testid="stSidebar"] h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+}
+
+h1 {
+    font-size: 2.4rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+/* button[kind="header"] {
+    display: none !important;
+} */
+
+[data-testid="stSidebarCollapseButton"] {
+    display: none !important;
+}
